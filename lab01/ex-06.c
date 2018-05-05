@@ -4,7 +4,7 @@
 
 int main()
 {
-	int i, n, somatorio;
+	int i, n, somatorio = 0;
 	scanf("%d", &n);
 
 	if (n >= 1)
