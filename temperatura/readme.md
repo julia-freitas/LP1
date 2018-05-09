@@ -7,3 +7,5 @@
   - Em vez de int, usar o tamanho mais econômico;
   - Ler as 50 temperaturas para o vetor;
   - Calcular a média;
+  - Exibir a quantidade de leituras acima da média
+  - Subir para o GitHub
