@@ -1,4 +1,4 @@
-Exercício de sala do dia 07/05/18
+#Exercício de sala do dia 07/05/18
 
 
 Criar um vetor para guardar 50 temperaturas
