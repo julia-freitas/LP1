@@ -7,6 +7,7 @@ int main()
 	int i;
 	int soma = 0;
 	float media = 0;
+	int aux = 0;
 
 	for(i = 0; i < 5; i++)
 	{
@@ -21,6 +22,17 @@ int main()
 
 	media = soma/5.0;
 	printf("media: %.2f\n", media);
+
+	printf("Valores acima da media: ");
+	for (i = 0; i < 5; i++)
+	{
+		aux = temps[i] - '0';
+		if (aux > media)
+		{
+			printf("%d ", aux);
+		}
+
+	}
 
 	return 0;
 }
