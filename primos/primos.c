@@ -28,19 +28,15 @@ int main()
 
 int eh_primo(int n)
 {
-	int resto, divisores, i = 0;
+	int resto, i = 0;
 	
 	
 	for(i = 2; i < n; i++)
 	{
 		resto = n%i;
 		
-		if (resto == 0)
-			divisores++;
-	}
-			
-		if (divisores) // nao eh primo
+		if (resto == 0) // tem divisor, nao eh primo
 			return 0;
-		else // eh primo
-			return 1;
+	}
+	return 1; // nao tem divisor, eh primo
 }
