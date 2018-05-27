@@ -1,6 +1,6 @@
 # Projeto Final da disciplina Linguagens de Programação I
 
-### Automação da sala IEEE UERJ (5015 - bloco F)
+### Automação da sala IEEE UERJ (5015 - bloco E)
 
 Projeto feito com arduino e desenvolvido em C, com a finalidade de automatizar a sala que utilizamos para nossas atividades.
 
