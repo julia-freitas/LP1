@@ -10,4 +10,6 @@ Nesse projeto, utilizarei:
 
 * Sensor de temperatura para ligar o ar condicionado;
 
-* Kit RFID para identificação dos membros: cada membro teria um cadastro com seus dados, e o cartão individual serve para registrar o horário de entrada e saída de cada membro - uma pequena tela LCD também será usada para validar a entrada e saída na porta.
+* RFID para identificação dos membros: cada membro teria um cadastro com seus dados, e o cartão individual serve para registrar o horário de entrada e saída de cada membro - uma pequena tela LCD também será usada para validar a entrada e saída na porta.
+
+* Módulo RTC para contagem da data e hora;
