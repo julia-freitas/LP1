@@ -1,0 +1,7 @@
+http://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/
+
+https://www.filipeflop.com/blog/monitorando-temperatura-e-umidade-com-o-sensor-dht11/
+
+https://create.arduino.cc/projecthub/ThothLoki/portable-arduino-temp-humidity-sensor-with-lcd-a750f4
+
+https://playground.arduino.cc/Main/DHT11Lib

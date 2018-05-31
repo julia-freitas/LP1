@@ -1,0 +1,28 @@
+usar controle remoto para ligar e desligar a luz e o ar condicionado;
+
+usar controle remoto para ligar e desligar o ar condicionado;
+
+usar ldr para identificar se a luz está acesa;
+
+usar buzzer para apitar quando a porta estiver aberta;
+
+Arduino Preprocessor Directives
+http://www.deviceplus.com/how-tos/arduino-guide/arduino-preprocessor-directives-tutorial/
+
+Arduino Communication Protocols
+http://www.deviceplus.com/how-tos/arduino-guide/arduino-communication-protocols-tutorial/
+
+JPEG Decoding on Arduino Tutorial
+http://www.deviceplus.com/how-tos/arduino-guide/jpeg-decoding-on-arduino-tutorial/
+
+ESP-8266 setup tutorial using arduino
+http://www.deviceplus.com/how-tos/arduino-guide/esp8266-setup-tutorial-using-arduino/
+
+Home Security system using CAYENNE
+http://www.deviceplus.com/how-tos/arduino-guide/diy-arduino-home-security-system-using-rohm-sensor-kit-part-2-cayenne-setup/
+
+CAYENNE
+https://mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload
+
+Alguns projetos de tranca de porta com arduino
+https://create.arduino.cc/projecthub/projects/tags/lock

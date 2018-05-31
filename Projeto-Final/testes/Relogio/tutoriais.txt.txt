@@ -1,0 +1,5 @@
+https://portal.vidadesilicio.com.br/real-time-clock-rtc-ds3231/
+
+http://blog.eletrogate.com/rtc-real-time-clock-ds1302-1307-e-3231/
+
+http://www.reuk.co.uk/wordpress/accurate-ds3231-real-time-clock-as-alternative-to-ds1307/
