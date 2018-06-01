@@ -15,13 +15,14 @@
 ## Exercício 5.2
 
 * Uma conta é representada por um inteiro que guarda o saldo total:
-
+```
     int minha_conta;
-	
-* Uma compra na internet é efetuada por uma chamada `compra(conta,valor)` . A função recebe um ponteiro para uma conta e um valor a ser debitado:
+```
 
+* Uma compra na internet é efetuada por uma chamada `compra(conta,valor)` . A função recebe um ponteiro para uma conta e um valor a ser debitado:
+```
     void compra (int* conta, int valor) { ... }
-    
+```
 * Um casal tem duas contas e quer usar a conta com maior saldo para fazer uma compra de 500 reais.
 
 * Faça um programa que leia o saldo das duas contas e efetue a compra corretamente. Ao final, o programa deve exibir os saldos das duas contas.
@@ -29,9 +30,9 @@
 ## Exercício 5.3
 
 * Agora, o casal tem uma lista de compras a efetuar:
-
+```
     int compras[] = { 100, 50, 80, 30, 20 };
-    
+``` 
 * Faça um programa que leia o saldo das duas contas e efetue ascompras corretamente, sempre usando a conta com o maior saldo.
 
 * A cada compra, o programa deve exibir os saldos das duas contas.
