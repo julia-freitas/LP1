@@ -27,7 +27,7 @@ int main()
 	struct Pessoa julia;
 	preenche(&julia);
 
-	printf("idade = %d, curso = %s, entrada = %s, saida = %s\n", julia.idade, julia.curso, julia.entrada, julia.saida);
+	printf("idade = %d\n, curso = %s\n, entrada = %s\n, saida = %s\n", julia.idade, julia.curso, julia.entrada, julia.saida);
 	return 0;
 }
 
