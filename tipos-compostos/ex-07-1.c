@@ -1,15 +1,6 @@
-/*Crie uma struct qualquer relacionada ao seu projeto.
-	Seja criativo!
-Crie uma função preenche que recebe um ponteiro para o novo tipo criado 
-e leia os campos para a variável passada, ex.:
-
-struct T t;
-preenche(&t);
-printf(“A=%d, B=%d\n”, t.a, t.b);*/
-
 #include <stdio.h>
 
-
+// declaracao da struct 
 struct Pessoa // struct que guarda informacoes de cada pessoa ao efetuar o cadastro
 {
 	int idade;
@@ -19,7 +10,7 @@ struct Pessoa // struct que guarda informacoes de cada pessoa ao efetuar o cadas
 
 };
 
-
+// prototipo de funcao
 void preenche(struct Pessoa* nome);  //recebe o apontador para a struct para acessar e modificar seu conteudo
 
 int main()
