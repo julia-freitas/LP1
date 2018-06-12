@@ -1,4 +1,4 @@
-usar controle remoto para ligar e desligar a luz e o ar condicionado;
+usar controle remoto para ligar e desligar a luz;
 
 usar controle remoto para ligar e desligar o ar condicionado;
 
