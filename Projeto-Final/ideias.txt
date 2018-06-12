@@ -2,9 +2,11 @@ usar controle remoto para ligar e desligar a luz e o ar condicionado;
 
 usar controle remoto para ligar e desligar o ar condicionado;
 
-usar ldr para identificar se a luz est· acesa;
+usar ldr para identificar se a luz est√° acesa;
 
 usar buzzer para apitar quando a porta estiver aberta;
+
+modulo de som para a voz do Jarvis https://produto.mercadolivre.com.br/MLB-820315494-modulo-86064-som-arduino-eletronicaautomaco-_JM
 
 Arduino Preprocessor Directives
 http://www.deviceplus.com/how-tos/arduino-guide/arduino-preprocessor-directives-tutorial/
