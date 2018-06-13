@@ -13,3 +13,14 @@ Nesse projeto, utilizarei:
 * RFID para identificação dos membros: cada membro teria um cadastro com seus dados, e o cartão individual serve para registrar o horário de entrada e saída de cada membro - uma pequena tela LCD também será usada para validar a entrada e saída na porta.
 
 * Módulo RTC para contagem da data e hora;
+
+
+#### TO DO:
+
+- [ ] até **23/06** : testar todos os módulos e sensores - para definir quais utilizarei no projeto; 
+
+- [ ] até **30/06** : definir todos os recursos da linguagem C que utilizarei. ex(entrada e saída, ponteiros e vetores, arquivos);
+
+- [ ] ....
+
+- [ ] DESAFIO: usar arduino pela linha de comando; :D
