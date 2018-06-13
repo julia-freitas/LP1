@@ -6,7 +6,7 @@ usar ldr para identificar se a luz está acesa;
 
 usar buzzer para apitar quando a porta estiver aberta;
 
-persiana automatizada - motor de passo;
+persiana automatizada - motor de passo e LDR;
 
 modulo de som para a voz do Jarvis https://produto.mercadolivre.com.br/MLB-820315494-modulo-86064-som-arduino-eletronicaautomaco-_JM
 
