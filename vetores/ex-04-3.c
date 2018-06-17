@@ -1,3 +1,5 @@
+//RESOLVE PARCIALMENTE O PROBLEMA
+
 /* Crie uma struct para guardar um ponto no espaço bi-dimensional com dois inteiros x e y.
  Crie uma função para preencher 1 ponto.
  Na main, crie um vetor com dez pontos.
@@ -20,14 +22,14 @@ void preenche_vetor(struct Ponto* , int);
 int main()
 {
 	struct Ponto p1;
-	struct Ponto vet[10];
+	struct Ponto vet[3];
 
 	//preenche_ponto(&p1);
 	
 	//printf("p1.x: %d\n", p1.x);
 	//printf("p1.y: %d\n", p1.y);
 	
-	preenche_vetor(struct Ponto* vet, 10);
+	preenche_vetor(vet, 3);
 
 	return 0;
 }
@@ -50,7 +52,7 @@ void preenche_vetor(struct Ponto* vet, int n)
 	{
 	    struct Ponto p; // cria a struct Ponto
 		preenche_ponto(&p); // passa a struct Ponto p para a funcao
-		vet[i] = p;
+		vet[i] = p; // preenche o elem i do vetor com a struct completa
 	}
 
 }
