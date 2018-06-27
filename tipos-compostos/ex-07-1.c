@@ -9,8 +9,8 @@ printf(“A=%d, B=%d\n”, t.a, t.b);*/
 
 #include <stdio.h>
 
-
-struct Pessoa // struct que guarda informacoes de cada pessoa ao efetuar o cadastro
+// struct que guarda informacoes de cada pessoa ao efetuar o cadastro
+struct Pessoa 
 {
 	int idade;
 	char curso[30];
@@ -19,31 +19,34 @@ struct Pessoa // struct que guarda informacoes de cada pessoa ao efetuar o cadas
 
 };
 
+//prototipos de funcao
+//recebe o apontador para a struct para acessar e modificar seu conteudo
+void preenche(struct Pessoa* nome);  
 
-void preenche( struct Pessoa* );  //recebe o apontador para a struct para acessar e modificar seu conteudo
 
 int main()
 {
-	struct Pessoa Julia;
-	preenche(struct Pessoa* Julia);
+	struct Pessoa julia;
+	preenche(&julia);
 
+	printf("idade = %d, curso = %s, entrada = %s, saida = %s\n", julia.idade, julia.curso, julia.entrada, julia.saida);
 	return 0;
 }
 
-void preenche( struct Pessoa* Julia)  //recebe o apontador para a struct para acessar e modificar seu conteudo
+
+//recebe o apontador para a struct para acessar e modificar seu conteudo
+void preenche(struct Pessoa* p)
 {
 	printf("digite sua idade: ");
-	scanf("%d", (*Julia).idade);
+	scanf("%d", &(*p).idade);
 	
 	printf("digite seu curso: ");
-	scanf("%s", (*Julia).curso);
+	scanf("%s", (*p).curso);
 	
 	printf("digite seu horario padrao de entrada: ");
-	scanf("%s", (*Julia).entrada);
+	scanf("%s", (*p).entrada);
 	
 	printf("digite seu horario padrao de saida: ");
-	scanf("%s", (*Julia).saida);
+	scanf("%s", (*p).saida);
 
 }
-
-
