@@ -51,10 +51,10 @@ int main()
 	{
 		//printf("pontos[%d]: %d\n", i, vet[i].pontos);
 		le_personagem(&vet[i]);
-		printf("id[%d]: %d\n", i, vet[i].id);
+		printf("id[%d]: %d\n\n", i, vet[i].id);
 		printf("vet[%d].x: %d, ", i, vet[i].pos.x);
 		printf("vet[%d].y: %d\n", i, vet[i].pos.y);
-		printf("pontos[%d]: %d\n", i, vet[i].pontos);
+		printf("pontos[%d]: %d\n\n\n", i, vet[i].pontos);
 	}
 	
 	return 0;
@@ -63,15 +63,19 @@ int main()
  // funcao que preenche a struct posicao - recebe o end da struct - retorna vazio
 void le_posicao(struct Posicao* ploc1)
 {
+	printf("pos.x: ");
 	scanf("%d", &(*ploc1).x);
+	printf("pos.y: ");
  	scanf("%d", &(*ploc1).y);
 }
 
 // funcao que preenche a struct personagem - recebe end do vetor de personagens e tamanho do vetor - retorna vazio
 void le_personagem( struct Personagem* ploc2)
 {
+	printf("id: ");
 	scanf("%d", &(*ploc2).id); 
  	le_posicao(&(*ploc2).pos);
+ 	printf("pontos: ");
  	scanf("%d", &(*ploc2).pontos);
 }
 
