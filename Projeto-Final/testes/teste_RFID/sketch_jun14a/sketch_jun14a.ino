@@ -1,3 +1,9 @@
+/*
+ * delay de 5 s para a execucao para acender o led e nao permite que outro cartao seja lido nesse tempo
+ * solucao: utilizar o timer millis() ou callbacks
+ * contar um tempo de 5s, associado ao cartao, por meio da struct, para travar a escrita da memoria eeprom daquele usuario, nos 5s.
+*/
+
 #include <SPI.h>
 #include <MFRC522.h>
  
@@ -5,8 +11,8 @@
 #define RST_PIN 9
 #define LED_R 2//LED Vermelho
 #define LED_G 3 //LED Verde
-#define CARTAO 57 BB 3F 0C
-#define TAG E2 9D 9D 2E
+//CARTAO 57 BB 3F 0C
+//TAG E2 9D 9D 2E
 
 char st[20];
 
@@ -58,6 +64,7 @@ void acende_led()
   digitalWrite (LED_R, HIGH);
 }
 
+// funcao que imprime os valores de tag do cartao
 void imprime_cartao()
 {
   String conteudo = "";
@@ -79,11 +86,15 @@ void imprime_cartao()
   Serial.println();
   conteudo.toUpperCase();
  
-  if ( (conteudo.substring(1) == "CARTAO") || (conteudo.substring(1) == "TAG") )//ID CARTÃO
+  if ( (conteudo.substring(1) == "57 BB 3F 0C")) //|| (conteudo.substring(1) == "E2 9D 9D 2E") )//ID CARTÃO
   {
     Serial.println("Acesso autorizado !");
     Serial.println();
     acende_led();
   }
+  else // ID CARTAO: E2 9D 9D 2E
+    Serial.println("Acesso negado !");
+    Serial.println();
+    delay(5000);
 }
 
