@@ -27,16 +27,14 @@ void imprime_vetor(struct Ponto* ps2, int n);
 
 int main()
 {
-<<<<<<< HEAD
+
 	struct Ponto p1;
 	struct Ponto vet[3];
 
 	//preenche_ponto(&p1);
-=======
 	// PARA TESTAR A FUNCAO preenche_ponto
 	//struct Ponto p1; // declara p1
 	//preenche_ponto(&p1); // passa o ponteiro de p1 para a funcao
->>>>>>> ba0abe70d557db203eeecccba64633adf76c7fd8
 	
 	struct Ponto ps[TAM];
 	preenche_vetor(&ps[0], TAM);
@@ -44,11 +42,8 @@ int main()
 	struct Ponto maior = distante(ps);
 	printf("MAIOR {%d,%d} \n\n", maior.x, maior.y);
 	
-<<<<<<< HEAD
 	preenche_vetor(vet, 3);
 
-=======
->>>>>>> ba0abe70d557db203eeecccba64633adf76c7fd8
 	return 0;
 }
 
@@ -67,18 +62,16 @@ void preenche_vetor(struct Ponto* ps1, int n)
 	int i;
 	for (i = 0; i < n; i++)
 	{
-<<<<<<< HEAD
-	    struct Ponto p; // cria a struct Ponto
+	 	struct Ponto p; // cria a struct Ponto
 		preenche_ponto(&p); // passa a struct Ponto p para a funcao
 		vet[i] = p; // preenche o elem i do vetor com a struct completa
 		printf("%d", &(*vet[i]).x);
 		printf("%d", &(*vet[i]).y);
-=======
+		
 		struct Ponto ploc2;
 		preenche_ponto(&ploc2);
 		ps1[i] = ploc2;
 		//preciso copiar todos os campos da estrutura ploc2 para o indice i do vetor ps
->>>>>>> ba0abe70d557db203eeecccba64633adf76c7fd8
 	}
 }
 
