@@ -131,14 +131,11 @@ void add_usuario(int posx, int posy, String tag)
     int id = numpessoas;
     
     numpessoas++;
-    
-    int est = 0;
-
-    EEPROM.update(id, 0);
 
     users[id].mesa.x = posx;
     users[id].mesa.y = posy;
     users[id].tag = tag;
+    users[id].estado = EEPROM.read(id);
 }
 
 
@@ -195,6 +192,5 @@ void muda_estado(int id)
     users[id].estado = 0;
   }
 }
-
 
 
