@@ -39,7 +39,7 @@ struct usuario users[TAM]; // guarda a struct dos usuarios a cada posicao do arr
 // prototipos de funcao
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-void add_usuario(int , int , String, char*);
+int add_usuario(int , int , String, char*);
 void acende_led(); // TO-DO : FAZER A FUNCAO PARA RECEBER OS PARAMETROS: PINO DO LED E ESTADO, comparando o estado atual com o estado a ser alterado
 int valida_cartao(); // funcao para leitura do cartao
 void muda_estado();// funcao para mudar estado do usuario: fora ou dentro
@@ -59,10 +59,10 @@ void setup()
   pinMode(LED_G, 3);
 
   // cria o prim usuario, na pos[0] do vetor, preenchendo nos campos: x = 50, y = 37, cartao  57 BB 3F 0C, nome "Julia"
-  add_usuario(50, 37, "57 BB 3F 0C", "Julia"); 
+  numpessoas = add_usuario(50, 37, "57 BB 3F 0C", "Julia"); 
 
   // cria o seg usuario, na pos[1] do vetor, preenchendo nos campos: x = 40, y = 27, cartao  E2 9D 9D 2E, nome "Francisco"
-  add_usuario(40, 27, "E2 9D 9D 2E", "Francisco");
+  numpessoas = add_usuario(40, 27, "E2 9D 9D 2E", "Francisco");
   
 }
 
@@ -116,14 +116,14 @@ void loop()
   Serial.println("---------------------------------------------------");
 
   Serial.println();
-  imprime_eeprom();
+  //imprime_eeprom();
 
   delay(2000);
 
 }
 
 // cria usuario, na pos[id] do vetor, no campo x = posx, y = posy, associado ao num do cartao
-void add_usuario(int posx, int posy, String tag, char* nome)
+int add_usuario(int posx, int posy, String tag, char* nome)
 {
     int id = numpessoas;
     numpessoas++;
@@ -133,6 +133,7 @@ void add_usuario(int posx, int posy, String tag, char* nome)
     users[id].mesa.y = posy;
     users[id].tag = tag;
     strncpy(users[id].nome, nome, strlen(nome));
+    return numpessoas;
 }
 
 
@@ -146,6 +147,7 @@ void acende_led()
 }
 
 
+// verifica se o cartao esta cadastrado na eeprom
 int valida_cartao()
 {
   String conteudo = "";
@@ -190,6 +192,7 @@ void muda_estado(int posicao)
   }
 }
 
+// funcao para escrever zero em todas as posicoes da eeprom
 void limpa_eeprom()
 {
   for (int i = 0; i < EEPROM.length(); i++)
@@ -198,7 +201,7 @@ void limpa_eeprom()
   }
 }
 
-
+// imprime o conteudo de todas as posicoes da eeprom
 void imprime_eeprom()
 {
   Serial.println("EEPROM: ");
@@ -211,6 +214,7 @@ void imprime_eeprom()
   Serial.println(' ');
 }
 
+// imprime no lcd as mensagens de bem-vindo e tchau
 void imprime_lcd(int indice, char* nome)
 {
     Serial.println();
