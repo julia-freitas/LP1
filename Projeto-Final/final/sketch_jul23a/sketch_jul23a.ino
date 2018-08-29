@@ -99,7 +99,7 @@ void loop()
   
   Serial.println();
   Serial.print("estado antes: ");
-  Serial.println(users[indice].estado);
+  Serial.println(EEPROM[indice]);
   Serial.println();
 
   // cartao foi aceito - a pessoa esta cadastrada - muda o estado gravado na eeprom
@@ -112,7 +112,7 @@ void loop()
   
   Serial.println();
   Serial.print("estado depois: ");
-  Serial.println(users[indice].estado);
+  Serial.println(EEPROM[indice]);
   Serial.println("---------------------------------------------------");
 
   Serial.println();
@@ -181,12 +181,12 @@ void muda_estado(int posicao)
   if (EEPROM[posicao] == 0)
   {
     EEPROM.update(posicao, 1); // recebe endereco e valor
-    users[posicao].estado = 1;
+    //users[posicao].estado = 1;
   }
   else
   {
     EEPROM.update(posicao, 0); // recebe endereco e valor
-    users[posicao].estado = 0;
+    //users[posicao].estado = 0;
   }
 }
 
@@ -220,7 +220,7 @@ void imprime_lcd(int indice, char* nome)
         lcd.begin(16,2);
         lcd.clear();
         lcd.print("Bem-vindo");
-        lcd.setCursor(0, 1);
+        lcd.setCursor(0,1);
         lcd.print(nome);
         lcd.print("!");
     }
@@ -230,7 +230,7 @@ void imprime_lcd(int indice, char* nome)
       Serial.print("Tchau!");
       lcd.begin(16,2);
       lcd.clear();
-      lcd.print("Bem-vindo");
+      lcd.print("Tchau");
       lcd.setCursor(0,1);
       lcd.print(nome);
       lcd.print("!");
