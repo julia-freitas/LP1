@@ -190,11 +190,11 @@ void muda_estado(int posicao)
 {
   int posEeprom = posicao*TAMUS +1;
 
-  Serial.print("posEeprom: ");
-  Serial.println(posEeprom);
+  //Serial.print("posEeprom: ");
+  //Serial.println(posEeprom);
 
-  Serial.print("EEPROM[posEeprom]: ");
-  Serial.println(EEPROM[posEeprom]); 
+  //Serial.print("EEPROM[posEeprom]: ");
+  //Serial.println(EEPROM[posEeprom]); 
   
   if (EEPROM[posEeprom] == 0)
   {
